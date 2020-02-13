@@ -1,0 +1,6 @@
+framework module YBBNetworking {
+  umbrella header "YBBNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,33 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - MyUntity (0.1.0):
+    - YBBNetworking
+  - YBBNetworking (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MyUntity (from `../`)
+  - YBBNetworking (from `../../YBBNetworking`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  MyUntity:
+    :path: "../"
+  YBBNetworking:
+    :path: "../../YBBNetworking"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  MyUntity: 21a88d763adb7cac2ccaadddfff4c8098deab35a
+  YBBNetworking: 9d7351410b03edeeffa82ab8d4adead8ac546283
+
+PODFILE CHECKSUM: 881b4bac2a8d12330a47880075df7f0d5ca025a9
+
+COCOAPODS: 1.8.4
