@@ -18,10 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MyUntity/Classes/**/*",
-  "dependencies": {
-    "YBBNetworking": [
-
-    ]
-  }
+  "source_files": "MyUntity/Classes/**/*"
 }
