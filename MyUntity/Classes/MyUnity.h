@@ -13,7 +13,7 @@
 +(BOOL)theStringIsNull:(NSString *)string;
 + (void)setSpecifiedViewHeight:(id)sender withHeight:(CGFloat)height;
 + (BOOL) validateNumber:(NSString *)num;
-+(NSString *)jsonToString:(id)json;
++(NSString *)jsonToString:(id)json options:(NSJSONWritingOptions)options;
 
 
 

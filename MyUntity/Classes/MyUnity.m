@@ -27,7 +27,8 @@
     if(string == nil || (NSNull *)string == [NSNull null] || [string isEqualToString:@""] || [string isEqualToString:@"null"]){
         return true;
     }
-   
+    return false;
+}
 
 
 //设置指定视图的高度
