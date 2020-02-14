@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "CMView.h"
+#import "MyUnity.h"
 
 FOUNDATION_EXPORT double MyUntityVersionNumber;
 FOUNDATION_EXPORT const unsigned char MyUntityVersionString[];

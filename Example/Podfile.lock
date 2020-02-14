@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - MyUntity (0.1.0)
+  - MyUntity (0.6.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MyUntity: 805b791be11ca25d4168310306e60657a1de9451
+  MyUntity: f05232ae722e1bc9b7ad2c8291d6e1016e6e2663
 
 PODFILE CHECKSUM: 3e55ee37bce88d606c32eecf285049b54e8cad10
 
