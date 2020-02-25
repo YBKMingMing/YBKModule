@@ -10,6 +10,8 @@
 
 @interface MyUnity : NSObject
 
+
++(NSString *)validatePassword:(NSString *)pwd;
 +(BOOL)theStringIsNull:(NSString *)string;
 + (void)setSpecifiedViewHeight:(id)sender withHeight:(CGFloat)height;
 + (BOOL) validateNumber:(NSString *)num;

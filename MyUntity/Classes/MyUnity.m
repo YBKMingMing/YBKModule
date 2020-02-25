@@ -22,6 +22,25 @@
 @implementation MyUnity
 
 
+//校验密码
++(NSString *)validatePassword:(NSString *)pwd{
+    NSString * str1 = [NSString stringWithFormat:@"^[a-zA-Z]{0,%d}$",(int)pwd.length];
+    NSPredicate *predicate2 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", str1];
+    if ([predicate2 evaluateWithObject:pwd] == YES) {
+        return @"密码格式错误，密码需由字母与数字混合组成";
+    }
+    if ([self validateIsNumber:pwd]) {
+        return @"密码格式错误，密码需由字母与数字混合组成";
+    }
+    NSString *regx=[NSString stringWithFormat:@"^[a-zA-Z0-9\u4e00-\u9fa5]{0,%d}$",(int)pwd.length];
+    NSPredicate *predicate4 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regx];
+    if([predicate4 evaluateWithObject:pwd]==NO){
+        return @"密码不能包含特殊符号，请使用字母与数字组合的密码";
+    }
+    return nil;
+}
+
+
 //字符串非空验证
 +(BOOL)theStringIsNull:(NSString *)string{
     if(string == nil || (NSNull *)string == [NSNull null] || [string isEqualToString:@""] || [string isEqualToString:@"null"]){
@@ -42,12 +61,19 @@
 }
 
 ///验证数字
-+ (BOOL) validateNumber:(NSString *)num
++ (BOOL)validateNumber:(NSString *)num
 {
     NSString *userNameRegex = @"^\\d+(\\.\\d+)?$";
     NSPredicate *userNamePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",userNameRegex];
     BOOL B = [userNamePredicate evaluateWithObject:num];
     return B;
+}
+
+//校验字符串是否为纯数字
++(BOOL)validateIsNumber:(NSString *)string{
+    NSString * numberString=[NSString stringWithFormat:@"^[0-9]{0,%d}$",(int)string.length];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberString];
+    return [predicate evaluateWithObject:string];
 }
 
 
